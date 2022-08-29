@@ -103,12 +103,11 @@ img
 p
 {
 	font-size: 12.0pt;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	line-height: 20pt;
-	letter-spacing: 0.25px;
 	widows: 3;
 	orphans: 3;
+	margin-top: 16px;
+	line-height: 16pt;
+	margin-bottom: 16px;
 }
 
 p.table-text
@@ -218,8 +217,8 @@ h1
 {
 	font-weight: bold;
 	font-size: 24.0pt;
-	color: var(--Brand1);
 	margin-top: 0;
+	color: #d86018;
 }
 
 h2
@@ -807,3 +806,4 @@ p.footer-sub
 		text-decoration: none;
 	}
 }
+
