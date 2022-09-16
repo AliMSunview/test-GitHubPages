@@ -1,0 +1,1287 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* SD Doc Team Stylesheet for Online and Print Help Documentation */
+/*============== BEGIN GLOBAL STYLE SETTINGS ==================*/
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+li,
+table
+{
+	font-family: Microsoft Sans Serif, sans-serif;
+	font-size: 1em;
+	mc-hypenate: never;
+}
+
+strong.orange
+{
+	color: #f26122;
+}
+
+strong.purple
+{
+	color: #5c2e85;
+}
+
+strong.red
+{
+	color: #ec008c;
+}
+
+p.cell
+{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+p.FrontMatter
+{
+	font-size: 1.225em;
+	font-weight: bold;
+	color: #252229;
+}
+
+p.ticket
+{
+	font-weight: bold;
+	color: #ec008c;
+	mc-conditions: 'ConditionTags.InternalOnly';
+}
+
+.hreleaseoverviewdiv
+{
+	margin-bottom: 32px;
+	/*
+	border: 1px solid #263870;
+	background-color: #c8ddf1;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+	*/
+}
+
+img.screenshot
+{
+	mc-thumbnail: hover;
+	border: 1px solid #1c98d5;
+	mc-thumbnail-max-height: 150px;
+	mc-image-position: left;
+}
+
+p
+{
+	margin-left: 10px;
+	color: #252229;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.headerinfo
+{
+	font-family: Microsoft Sans Serif, sans-serif;
+	line-height: 5px;
+}
+
+.headerinfoSubTitle
+{
+	margin-left: 30px;
+	font-style: italic;
+	line-height: 1.1em;
+}
+
+.headerinfoBulletList
+{
+	margin-left: 30px;
+}
+
+h1
+{
+	font-size: 1.225em;
+	font-weight: bold;
+	color: #252229;
+}
+
+h2
+{
+	font-style: normal;
+	font-size: 1.125em;
+	font-weight: bold;
+	color: #d86018;
+}
+
+h2.technicalNotes
+{
+	font-size: 1.225em;
+	font-weight: bold;
+	border-bottom: 1px solid;
+	padding-top: 10px;
+	margin-top: 50px;
+	color: #363e45;
+}
+
+h3
+{
+	font-size: 1em;
+	mc-heading-level: 0;
+}
+
+h4,
+h5,
+h6
+{
+	font-size: 0.875em;
+	font-weight: bold;
+	color: #0073ba;
+}
+
+.title
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.Copyright
+{
+	font-size: 0.88em;
+	text-align: left;
+	color: #263870;
+	line-height: 1em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+
+.altfooter
+{
+	font-family: Microsoft Sans Serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #263870;
+	text-align: right;
+	line-height: 4pt;
+}
+
+.footer
+{
+	font-size: 0.88em;
+	text-align: center;
+}
+
+.footerlogo
+{
+	width: 200px;
+	height: 88px;
+}
+
+.header
+{
+	font-size: 1em;
+	text-align: left;
+	color: #263870;
+	font-weight: normal;
+}
+
+.releaseDate
+{
+	padding-bottom: 18pt;
+	font-style: italic;
+}
+
+.releaseinfo
+{
+	line-height: 4pt;
+	color: #252229;
+}
+
+.releaseversion
+{
+	
+}
+
+.securityclassification
+{
+	
+}
+
+.StepIntro
+{
+	font-weight: bold;
+}
+
+/* This is so the horizontal rule doesn't run into the sidemenu */
+
+.hr50
+{
+	width: 50%;
+	float: left;
+}
+
+.div100
+{
+	width: 100%;
+}
+
+a
+{
+	color: #263870;
+}
+
+/* Ordered and Unordered List Items. Online. */
+
+li.level1
+{
+	font-size: 0.875em;
+	font-family: Microsoft Sans Serif, sans-serif;
+	margin-left: 0.5em;
+}
+
+li.level2
+{
+	margin-left: 1.25em;
+}
+
+li.level3
+{
+	margin-left: 2.25em;
+}
+
+li.level4
+{
+	margin-left: 3em;
+}
+
+li.CheckBox
+{
+	list-style-image: url('../images/checkbox.png');
+	margin-left: 0in;
+}
+
+/* Top Search Bar for All Help Docs */
+
+#abcsearchbutton
+{
+	width: 3em;
+	margin-left: 5px;
+	height: 1.5em;
+	border: 0.0625em solid #f26122;
+}
+
+#abcinput
+{
+	height: 2em;
+	margin-top: 0;
+	margin-left: 5px;
+	padding-left: 0.375em;
+}
+
+#searchabconly
+{
+	display: none;
+	color: #c8ddf1;
+	font-size: .875em;
+}
+
+#abcsearchdiv
+{
+	position: absolute;
+	top: 0.5em;
+	right: .5em;
+}
+
+div.sideContent
+{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 33.33%;
+}
+
+/* Callouts */
+
+.releasenotesoverview
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #29a9e1;
+	border-left: solid 15px #a0b5da;
+	background-color: #c8ddf1;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+}
+
+.issuecorrected
+{
+	width: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #263870;
+	background-color: #c8ddf1;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background-image: url('../images/glyphicons_152_check.png');
+	background-position: 5px 5px;
+	background-repeat: no-repeat;
+	min-height: 30px;
+	padding: 14px 45px;
+}
+
+.issuecorrected::before
+{
+	content: 'Issue Corrected.';
+	font-weight: bold;
+	color: #cc0000;
+}
+
+.caution
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #fbdc00;
+	background-color: #fff9cc;
+	background-image: url('../images/glyphicons_078_warning_sign.png');
+	background-position: 5px 10px;
+	background-repeat: no-repeat;
+	min-height: 30px;
+	padding: 18px 45px;
+}
+
+.example
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #0073ba;
+	border-left: solid 15px #0073ba;
+	background-color: #c8ddf1;
+	padding: 14px 20px;
+}
+
+.important
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #7d2bb9;
+	background-color: #e8d6f5;
+	background-image: url('../images/glyphicons_196_circle_exclamation_mark.png');
+	background-position: 5px 10px;
+	background-repeat: no-repeat;
+	min-height: 30px;
+	padding: 18px 45px;
+}
+
+.note
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #00aeef;
+	background-color: #ccf1ff;
+	background-image: url('../images/glyphicons_150_edit.png');
+	background-position: 5px 10px;
+	background-repeat: no-repeat;
+	min-height: 30px;
+	padding: 18px 45px;
+}
+
+.tip
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #41AD49;
+	background-color: #daf1dc;
+	background-image: url('../images/glyphicons_064_lightbulb.png');
+	background-position: 5px 10px;
+	background-repeat: no-repeat;
+	min-height: 30px;
+	padding: 18px 45px;
+}
+
+.sampleLink
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-family: "Courier New", sans-serif;
+	font-size: inherit;
+	color: #252229;
+	border: solid 1px #252229;
+	background-color: #e0e0df;
+	padding: 10px 10px;
+}
+
+.warning
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1 em;
+	margin-bottom: 1em;
+	color: #252229;
+	border: solid 1px #ec008c;
+	background-color: #ffcceb;
+	background-image: url('../images/glyphicons_078_warning_sign.png');
+	background-position: 5px 10px;
+	background-repeat: no-repeat;
+	min-height: 30px;
+	padding: 18px 45px;
+}
+
+MadCap|footnote
+{
+	font-family: Microsoft Sans Serif, sans-serif;
+}
+
+MadCap|expanding
+{
+	mc-open-image: url('../images/minus.png');
+	mc-closed-image: url('../images/plus.png');
+	mc-image-position: left;
+}
+
+MadCap|dropDown
+{
+	mc-open-image: url('../images/minus.png');
+	mc-closed-image: url('../images/plus.png');
+}
+
+MadCap|toggler
+{
+	mc-open-image: url('../images/minus.png');
+	mc-closed-image: url('../images/plus.png');
+	color: inherit;
+}
+
+MadCap|popupHead
+{
+	color: #5B8EC1;
+}
+
+MadCap|popupBody
+{
+	color: #EBEBEB;
+	border: none;
+	background-color: rgba(0, 0, 0, .85);
+	padding: 11px 15px;
+}
+
+MadCap|glossaryTerm
+{
+	
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	color: inherit;
+	font-weight: inherit;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	color: #5B8EC1;
+	font-weight: inherit;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	color: #5B8EC1;
+	font-weight: normal;
+}
+
+MadCap|conceptLink
+{
+	color: #000000;
+}
+
+MadCap|keywordLink
+{
+	color: #000000;
+}
+
+MadCap|relatedTopics
+{
+	color: #000000;
+}
+
+MadCap|helpControlMenu
+{
+	color: #707070;
+	background-color: #FFFFFF;
+	border: none;
+}
+
+MadCap|helpControlMenuItem
+{
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+MadCap|helpControlMenuItem.Highlighted
+{
+	color: #000000;
+	background-color: #E5EFF7;
+}
+
+.caution::before
+{
+	content: 'Caution! ';
+	font-weight: bold;
+	color: #252229;
+}
+
+.example::before
+{
+	content: 'EXAMPLE';
+	letter-spacing: 5px;
+	font-weight: bold;
+	color: #252229;
+	padding-bottom: 14px;
+	display: block;
+}
+
+.important::before
+{
+	content: 'Important! ';
+	font-weight: bold;
+	color: #252229;
+}
+
+.note::before
+{
+	content: 'Note: ';
+	font-weight: bold;
+	color: #252229;
+}
+
+.tip::before
+{
+	content: 'Tip: ';
+	font-weight: bold;
+	color: #252229;
+}
+
+.sampleLink::before
+{
+	content: 'URL:';
+	font-weight: bold;
+	color: #252229;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.warning::before
+{
+	content: 'Warning! ';
+	font-weight: bold;
+	color: #252229;
+}
+
+/* InternalNote Snippet Styling */
+
+.onlineInternalNote
+{
+	background-color: #252229;
+	font-size: 1em;
+	color: #f27a00;
+	text-align: center;
+}
+
+.onlineInternalNoteOtherTopics
+{
+	background-color: #ffffff;
+	font-size: 1em;
+	color: #f27a00;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #75707d;
+}
+
+/* Start Linked Integration Guide Styling */
+
+.Comment
+{
+	color: #41ad49;
+}
+
+.Property
+{
+	color: #d96c00;
+}
+
+.Value
+{
+	color: #0073ba;
+}
+
+/* End of Linked Integration Guide Styling */
+/*========= END GLOBAL STYLE SETTINGS =================*/
+/*========= BEGIN HELP DOCS TOP MENU CUSTOM STYLING ==============*/
+
+ul.topnav
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.abccontainer
+{
+	border-bottom: 1px solid #555555;
+	background-color: #252229;
+}
+
+/* Initially hide the submenus */
+
+.abcsubmenu
+{
+	display: none;
+}
+
+/* Float the list items side by side */
+
+ul.topnav li
+{
+	float: left;
+}
+
+/* Style the links inside the list items */
+
+ul.topnav li a
+{
+	font-family: Microsoft Sans Serif, sans-serif;
+	display: inline-block;
+	color: #adacb5;
+	text-align: center;
+	padding: 12px 12px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 0.875em;
+}
+
+/* Change background color of links on hover */
+
+a:link
+{
+	color: #263870;
+}
+
+a:visited
+{
+	color: #1c98d5;
+}
+
+ul.topnav li a:hover
+{
+	background-color: #252229;
+	color: #f27a00;
+}
+
+a:hover
+{
+	color: #f27a00;
+}
+
+ul.topnav li ul li a
+{
+	color: #ebebeb;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+ul.topnav li.icon
+{
+	display: none;
+}
+
+div.abcRow1	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.abcRow1::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.abcRow1::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.abcRow1 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.abcRow1 > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.abcRow1 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.abcRow1 > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+MadCap|miniTocProxy
+{
+	border-top-width: 0px;
+	padding-top: 5px;
+}
+
+/*========= END HELP DOCS TOP MENU CUSTOM STYLING ==============*/
+
+MadCap|glossaryProxy
+{
+	border-top-width: 0px;
+}
+
+p.MiniTOC2
+{
+	padding-left: 30px;
+}
+
+p.MiniTOC3
+{
+	padding-left: 40px;
+}
+
+MadCap|tocProxy
+{
+	border-top-style: none;
+	padding-top: 0px;
+}
+
+p.TOC4
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin: 1em 0 0 30px;
+}
+
+p.TOC3
+{
+	margin: 1em 0 0 20px;
+}
+
+p.TOC2
+{
+	margin: 1em 0 0 10px;
+}
+
+h4
+{
+	mc-heading-level: 0;
+	color: #c76b13;
+}
+
+h6
+{
+	mc-heading-level: 0;
+}
+
+h5
+{
+	mc-heading-level: 0;
+}
+
+code
+{
+	font-size: inherit;
+	font-family: 'Courier New';
+}
+
+/*========= BEGIN MOBILE AND DESKTOP CUSTOM STYLING =================*/
+
+/* When the screen is less than 1279 pixels wide, hide all list items, except for the first one (the first one is empty).
+Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width: 1279px)
+{
+	ul.topnav li
+	{
+		display: none;
+	}
+
+	ul.topnav li.icon
+	{
+		float: left;
+		display: inline-block;
+	}
+
+	ul.topnav li.icon a
+	{
+		color: #adacb5;
+		font-size: 1em;
+	}
+}
+
+/* FOR SMALLER SCREENS */
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon or dropdowns. 
+This class makes the topnav look good on small screens */
+
+@media screen and (max-width: 1279px)
+{
+	.symbolrotate
+	{
+		display: inline-block;
+	}
+
+	ul.topnav.responsive
+	{
+		position: relative;
+	}
+
+	ul.topnav.responsive li.icon
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	ul.topnav.responsive li
+	{
+		float: none;
+		display: inline;
+	}
+
+	ul.topnav.responsive li a
+	{
+		display: block;
+		text-align: left;
+		font-size: 1em;
+		border-top: 1px dotted #fbdc00;
+	}
+
+	ul.topnav.responsive li:last-child a
+	{
+		border-top: none;
+	}
+
+	ul.topnav.responsive li ul li a
+	{
+		border-top: none;
+		font-size: 0.875em;
+	}
+
+	.abcsubmenu.responsive
+	{
+		position: relative;
+		display: block;
+		z-index: 0;
+	}
+
+	.symbolrotate.responsive
+	{
+		-ms-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+}
+
+/* FOR LARGER SCREENS */
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on dropdowns. */
+
+@media screen and (min-width: 1280px)
+{
+	.abcsubmenu.responsive
+	{
+		position: absolute;
+		display: block;
+		z-index: 1000;
+	}
+
+	.symbolrotate
+	{
+		display: inline-block;
+	}
+
+	.abcsubmenu.responsive li
+	{
+		background-color: #75707d;
+		list-style-type: none;
+		float: none;
+		width: auto;
+	}
+
+	.abcsubmenu.responsive li a
+	{
+		display: block;
+		text-align: left;
+	}
+
+	.symbolrotate.responsive
+	{
+		-ms-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	/* These next two styles center the topnav */
+
+	.abccontainer
+	{
+		text-align: center;
+	}
+
+	.abccontainer ul.topnav
+	{
+		display: inline-block;
+	}
+
+	.abccontainer ul li:hover .abcsubmenu
+	{
+		
+	}
+}
+
+/*========= END MOBILE AND DESKTOP CUSTOM STYLING =================*/
+/*========= BEGIN PRINT AND PDF CUSTOM STYLING ==============*/
+
+@media print
+{
+	body
+	{
+		font-family: Microsoft Sans Serif, sans-serif;
+		font-size: 11pt;
+		mc-hyphenate: never;
+	}
+
+	.headerinfo
+	{
+		font-family: Microsoft Sans Serif;
+		line-height: 3pt;
+	}
+
+	/* Release Notes title */
+
+	.firstpageReleaseNotesTitle
+	{
+		font-size: 32pt;
+		font-weight: bold;
+		color: #263870;
+		line-height: 4pt;
+		font-family: Microsoft Sans Serif;
+		text-align: left;
+	}
+
+	/* Software Development title */
+
+	.firstpageSDTitle
+	{
+		font-family: Microsoft Sans Serif;
+		font-size: 14pt;
+		font-weight: normal;
+		color: #75707d;
+		text-align: left;
+		line-height: 1pt;
+	}
+
+	p
+	{
+		font-family: Microsoft Sans Serif, sans-serif;
+		font-size: 11pt;
+		margin-left: 16px;
+	}
+
+	.altfooter
+	{
+		font-family: Microsoft Sans Serif;
+		font-size: 8pt;
+		font-weight: normal;
+		color: #263870;
+		text-align: right;
+		line-height: 4pt;
+		margin: 0pt;
+		padding: 0pt;
+	}
+
+	.footer
+	{
+		font-family: Microsoft Sans Serif;
+		font-size: 8pt;
+		font-weight: normal;
+		color: #263870;
+		text-align: right;
+		line-height: 4pt;
+		margin: 0pt;
+		padding: 0pt;
+	}
+
+	.printfooter
+	{
+		font-family: Microsoft Sans Serif;
+		font-size: 7pt;
+		color: #263870;
+		text-align: right;
+		line-height: 4pt;
+	}
+
+	.printfooterRed
+	{
+		font-family: Microsoft Sans Serif;
+		font-size: 7pt;
+		text-align: right;
+		line-height: 4pt;
+		color: #ec008c;
+	}
+
+	img
+	{
+		max-width: 650px;
+	}
+
+	/* This is so the horizontal rule expands */
+
+	.hr50
+	{
+		width: 100%;
+	}
+
+	h1
+	{
+		font-size: 20pt;
+		font-family: Microsoft Sans Serif;
+		color: #252229;
+	}
+
+	h2
+	{
+		font-style: normal;
+		font-size: 16pt;
+		font-family: Microsoft Sans Serif;
+		font-weight: bold;
+		color: #263870;
+	}
+
+	h3
+	{
+		font-family: Microsoft Sans Serif;
+		font-size: 12pt;
+	}
+
+	h4,
+	h5,
+	h6
+	{
+		font-family: Microsoft Sans Serif, sans-serif;
+		font-size: 11pt;
+		font-weight: bold;
+		color: #0073ba;
+	}
+
+	.example::before
+	{
+		white-space: pre-line;
+		padding: 14px 20px;
+		padding-left: 0;
+	}
+
+	/* Ordered and Unordered List Items. Print. */
+
+	li
+	{
+		font-size: 11pt;
+		font-family: Microsoft Sans Serif, sans-serif;
+		margin-left: 16px;
+	}
+
+	li.level1
+	{
+		font-size: 11pt;
+		font-family: Microsoft Sans Serif, sans-serif;
+		margin-left: 16px;
+	}
+
+	li.level2
+	{
+		margin-left: 40px;
+	}
+
+	li.level3
+	{
+		margin-left: 64px;
+	}
+
+	li.level4
+	{
+		margin-left: 86px;
+	}
+
+	.titleheader
+	{
+		margin-left: 0;
+	}
+}
+
+/*========= END PRINT AND PDF CUSTOM STYLING ==============*/
+
+@media only screen and (max-width: 1279px)
+{
+	div.abcRow1 > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.abcRow1 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.abcRow1 > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.abcRow1 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.abcRow1 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.abcRow1 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	/* This is so the horizontal rule doesn't run into the sidemenu */
+
+	.hr50
+	{
+		width: 100%;
+	}
+}
+
+/*========= BEGIN SEARCH HIGHLIGHT STYLING ==============*/
+
+span.SearchHighlight1
+{
+	color: #000000;
+	background-color: #ebb800;
+}
+
+span.SearchHighlight10
+{
+	color: #ffffff;
+	background-color: #41ad49;
+}
+
+span.SearchHighlight2
+{
+	color: #000000;
+	background-color: #f27a00;
+}
+
+span.SearchHighlight3
+{
+	color: #000000;
+	background-color: #2ebf5a;
+}
+
+span.SearchHighlight4
+{
+	color: #000000;
+	background-color: #0096aa;
+}
+
+span.SearchHighlight5
+{
+	color: #000000;
+	background-color: #367ae0;
+}
+
+span.SearchHighlight6
+{
+	color: #ffffff;
+	background-color: #932ae6;
+}
+
+span.SearchHighlight7
+{
+	color: #ffffff;
+	background-color: #fbdc00;
+}
+
+span.SearchHighlight8
+{
+	color: #ffffff;
+	background-color: #f26122;
+}
+
+span.SearchHighlight9
+{
+	color: #ffffff;
+	background-color: #ec008c;
+}
+
+/*========= END SEARCH HIGHLIGHT STYLING ==============*/
+
